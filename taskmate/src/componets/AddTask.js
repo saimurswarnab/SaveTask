@@ -9,6 +9,7 @@ export const AddTask = ({taskList, setTaskList}) => {
       time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
     }
     setTaskList([...taskList, newTask]);
+    e.target.task.value = "";
 
   }
   return (
