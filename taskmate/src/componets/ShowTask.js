@@ -6,7 +6,7 @@ export const ShowTask = ({taskList, setTaskList}) => {
                 <span className="title">Todo</span>
                 <span className="count">{taskList.length}</span>
             </div>
-            <button className="clearAll">Clear All</button>
+            <button className="clearAll" onClick={()=>setTaskList([0])}>Clear All</button>
         </div>
         <ul>
             {taskList.map((task)=>(
