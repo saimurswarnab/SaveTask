@@ -5,7 +5,7 @@ export const AddTask = ({taskList, setTaskList}) => {
    
     const newTask = {
       id: date.getTime(), 
-      //name: e.target.task.value, 
+      name: e.target.task.value, 
       time:`${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
     }
     setTaskList([...taskList, newTask]);
