@@ -21,7 +21,9 @@ export const ShowTask = ({taskList, setTaskList, task, setTask}) => {
         </div>
         <ul>
             {taskList.map((todo)=>(
+                
                 <li key= {todo.id}>
+        
                 <p>
                     <span className="name">{todo.name}</span>
                     <span className="time">{todo.time}</span>
@@ -29,11 +31,15 @@ export const ShowTask = ({taskList, setTaskList, task, setTask}) => {
                 <i onClick={()=>handleEdit(todo.id)} className="bi bi-pencil-square"></i>
                 <i onClick={()=> handleDelete(todo.id)} className="bi bi-trash"></i>
             </li>
+            
+            
         
             ))}
  
         </ul>
+        
 
     </section>
+    
   )
 }

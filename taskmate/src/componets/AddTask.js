@@ -1,7 +1,7 @@
 export const AddTask = ({taskList, setTaskList, task, setTask}) => {
   const handleSubmit = (e) =>{
-    e.preventDefault();
-
+    e.preventDefault(); 
+  
     if(task.id){
       const date = new Date();
       const updatedTasklist = taskList.map((todo)=>(
