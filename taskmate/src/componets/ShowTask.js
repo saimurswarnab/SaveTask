@@ -17,7 +17,7 @@ export const ShowTask = ({taskList, setTaskList, task, setTask}) => {
                 <span className="title">Todo</span>
                 <span className="count">{taskList.length}</span>
             </div>
-            <button className="clearAll" onClick={()=>setTaskList([])}>Clear All</button>
+            <button className="clearAll " onClick={()=>setTaskList([])}>Clear All</button>
         </div>
         <ul>
             {taskList.map((todo)=>(
